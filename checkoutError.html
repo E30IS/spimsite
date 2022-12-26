@@ -1,0 +1,101 @@
+
+<div class="container">
+
+  <link rel="stylesheet" href="checkoutStyle.css">
+  
+  <div class="card-body">
+    <div class='error'>An error has occured processing your payment. Please check your input and try again.</div>
+    <div class="breadcrumb">
+      <div class="active">Payment Error</div>
+      <div class="next">Confirm Order</div>
+    </div>
+    
+    <div class="payment">
+      
+      <div class="creditcard">
+        <div class="thecard">
+          <div class="top-card">
+            <div class="circle"></div>
+            <div class="card-title">
+              Reciept Summary
+            </div>
+          </div>
+          <div class="card-info">
+          <label for="cars">Choose loaction:</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Incall</option>
+    <option value="saab">Outcall (Currently Not Avaialbe)</option>
+  </select>
+            <div class="card-number">
+            Duration:   $220 x 1 Hour
+            </div>
+            <div class="exp-date">
+             Subtotal (USD):  $220
+            </div>
+            <div class="card-holder">
+            Total (USD): $220
+            </div>
+            
+          </div>
+        
+         
+
+        </div>
+
+      </div>
+
+    
+      <div class="form">
+        <form action="checkout.html" method="get">
+          <label for="cardnumber">Card Number</label required>
+          <input type="text" id="cardnumber" maxlength="16" placeholder="1234 5678 9012 3456" required>
+          <label for="cardholder">Card Holder</label>
+          <input type="text" id="cardholder" placeholder="John Doe">
+          <label for="exp">Expiration Date</label>
+          <div class="date" required>
+              <select name="month" id="month">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+              <select name="Year">
+
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </div>
+          <div class="small">
+            <div class="cvv">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" maxlength="3" size="4" placeholder="123" required>
+            </div>
+            <p>Three or four digits, usually found on the back of the card.</p>
+          </div>
+         
+    <button>Proceed</button>
+  
+        </form>
+      </div>
+      
+    </div>
+    
+     <div class="card-holder">** The reciept is required to schedule the apointment **</div>         
+     <br>
+  </div>
+  
+</div>
